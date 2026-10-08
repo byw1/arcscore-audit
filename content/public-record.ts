@@ -45,8 +45,8 @@ export default {
       theme: "Schools",
       said: quote("Monitor athlete NIL activity, ensure compliance, and help your student-athletes maximize their potential.", "arc-site"),
       implies: read(
-        "Compliance is the strongest word in that line. It's what athletic departments have budget and fear for, and what the clearinghouse made urgent.",
-        { sources: ["csc-strain"] },
+        "Compliance is the strongest word in that line. The clearinghouse is strained by school-tied deals, and those are the deals that face its price check.",
+        { sources: ["csc-strain", "opendorse-report-2026"] },
       ),
     },
     {
@@ -72,7 +72,7 @@ export default {
         "trademark",
       ),
       implies: read(
-        "Pricing is in the company's own description of its core product. That puts it squarely against the clearinghouse's range of compensation, so the score should be tested against cleared deals before buyers ask.",
+        "Pricing is in the company's own description of its core product. For deals tied to a school, that sits right next to the clearinghouse's range of compensation, so the score should be tested against cleared deals before buyers ask.",
         { sources: ["roc-update"] },
       ),
     },
@@ -96,7 +96,7 @@ export default {
       theme: "Brands",
       said: quote("Return on Investment (ROI) measurement and attribution for sponsorship campaigns", "trademark"),
       implies: read(
-        "The right instinct. Brand recall from NIL deals is weak, so the brand that can see what a deal returned is the brand that books a second one.",
+        "Brand recall from NIL deals is weak, so the brand that can see what a deal returned is the brand that books a second one. This is the feature that earns renewals.",
         { sources: ["nil-recall"] },
       ),
     },
@@ -109,9 +109,10 @@ export default {
       said: quote(
         "a data and decisioning platform transforming the economics of college sports in the NIL era",
         "bcp-bio",
+        { speaker: "Bellarmine College Preparatory event biography" },
       ),
       implies: read(
-        "'Decisioning' is the investor-grade framing: ArcScore sells better decisions about money, not a social leaderboard. That framing should lead the deck and the sales pitch alike.",
+        "Framed as decisions about money rather than a social leaderboard. That separates it from the follower-count tools, and the pitch should prove it with a price and an error rate.",
       ),
     },
     {

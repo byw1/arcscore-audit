@@ -27,7 +27,7 @@ export default {
     {
       id: "supply",
       area: "Athlete supply",
-      jd: quote("Sign up athletes in football, basketball and volleyball, and keep their data current enough to score.", "brief"),
+      jd: quote("Sign up athletes in the sports brands are buying, and keep their data current enough to score.", "brief"),
     },
     {
       id: "credibility",
@@ -76,7 +76,7 @@ export default {
       { id: "product-data", label: "Product and data", note: read("Whoever builds the score and the app. The site and a sign-in page exist, so someone is building; who is not public.") },
     ],
     reports: [
-      { id: "athlete-ambassadors", label: "Campus ambassadors", note: read("Not a team yet. The first hire I'd make is a part-time network of athlete ambassadors in the focus sports.") },
+      { id: "athlete-ambassadors", label: "Campus ambassadors", note: read("Not a team yet. The first hire I'd make is a part-time network of athlete ambassadors in the sports I'd start with.") },
     ],
     upstream: [
       { id: "athletes", label: "Athletes", note: read("The supply side. Without enough scored athletes, there is nothing to sell to brands or schools.") },

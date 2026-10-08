@@ -15,8 +15,8 @@ export default {
     now: { x: 50, y: 50 },
     heading: { x: 45, y: 55 },
     why: read(
-      "The site pitches all three sides at once and says the score blends social and performance data. That puts ArcScore in the middle of both axes, which is either its edge or its problem. My read is that it should lean toward brands first, where the money is outside the school cap.",
-      { sources: ["arc-site"] },
+      "The site pitches all three sides at once, and the trademark filing lists both athlete performance data and social metrics. That puts ArcScore in the middle of both axes, which is either its edge or its problem. My read is that it should lean toward brands first, where the money is outside the school cap.",
+      { sources: ["arc-site", "trademark"] },
     ),
   },
   field: [
@@ -27,16 +27,16 @@ export default {
       kind: "Athletic department operating system",
       tags: ["Incumbent", "Roster and cap tools", "Marketplace"],
       oneLiner: sourced(
-        "Software most athletic departments already run, now including a general-manager tool for roster planning and athlete earnings, an NIL marketplace (formerly INFLCR) and payments.",
-        ["teamworks-personnel"],
+        "Operating software for sports organizations, used by more than 240 Division I programs, including a general-manager tool for roster planning and total athlete earnings and an NIL marketplace, Influencer.",
+        ["teamworks-personnel", "teamworks-pff"],
       ),
       now: { x: 92, y: 78 },
       heading: { x: 92, y: 92 },
       threat: "high",
       moves: [
-        { date: "2026-01-15", fact: sourced("Acquired Sportlogiq, an AI sports analytics company, to feed player performance and value models.", "teamworks-sportlogiq") },
+        { date: "2026-01-15", fact: sourced("Acquired Sportlogiq, an AI hockey-analytics company, to feed player performance and value models.", "teamworks-sportlogiq") },
         { date: "2026-03-30", fact: sourced("Acquired PFF's enterprise business, the football data used across the NFL and college programs.", "teamworks-pff") },
-        { date: "2026-07-08", fact: sourced("Murray State expanded to Teamworks' department-wide platform.", "teamworks-murray") },
+        { date: "2026-07-08", fact: sourced("Murray State began rolling Teamworks out across its athletic department.", "teamworks-murray") },
       ],
       direction: read(
         "Buying the performance data, then the valuation models, then the cap tool, then the payment rail. A Teamworks athlete-value number inside its general-manager tool is a matter of when, not if.",
@@ -97,7 +97,7 @@ export default {
         "The incumbent ArcScore would displace in an athletic department's NIL office. It already sells a marketability number to the same buyer.",
       ),
       response: read(
-        "Differentiate on the dollar figure, not the dashboard: a value a brand can price a deal against and a school can defend to the clearinghouse.",
+        "It already pairs social data with valuation tools, so a dollar figure alone isn't enough. Differentiate on blending performance data in, and on bringing outside brand money to the roster.",
       ),
     },
     {
@@ -107,7 +107,7 @@ export default {
       kind: "NIL marketplace and payments",
       tags: ["Marketplace", "Retail media", "Compliance"],
       oneLiner: sourced(
-        "The main marketplace and payment rail between athletes, schools and brands, now selling athlete content tied to retailer purchase data.",
+        "An NIL technology platform for athletes, schools and brands, now selling athlete content tied to retailer purchase data.",
         ["opendorse-one"],
       ),
       now: { x: 45, y: 25 },
@@ -115,13 +115,13 @@ export default {
       threat: "high",
       moves: [
         { date: "2025-10-02", fact: sourced("Took over agreements and payment processing for collectives left behind when SANIL shut down.", "opendorse-sanil") },
-        { date: "2026-04-09", fact: sourced("Heartland Collegiate Athletic Conference signed a conference-wide partnership.", "opendorse-heartland") },
-        { date: "2026-06-19", fact: sourced("Launched a curated athlete tier tied to retail media networks including Walmart Connect, Roundel and Amazon Ads.", "opendorse-one") },
+        { date: "2026-04-09", fact: sourced("The Heartland Collegiate Athletic Conference hired Opendorse for NIL consulting and education for its leadership.", "opendorse-heartland") },
+        { date: "2026-06-19", fact: sourced("Launched Athlete Commerce Media, linking its curated athlete tier to retail media networks including Walmart Connect, Roundel and Amazon Advertising.", "opendorse-one") },
         { date: "2026-06-22", fact: sourced("Published its 2026 NIL report, putting the total market at $4.5B for 2026-27.", "opendorse-report-2026") },
       ],
       direction: read("Moving up-market to national brands, and selling measured sales outcomes rather than reach."),
       threatRead: read(
-        "High on the brand side. It owns the rail most deals already run on and could add a value score whenever it wants one.",
+        "High on the brand side. Many schools already process deals through it, and it could add a value score whenever it wants one.",
       ),
       response: read(
         "Treat Opendorse as the rail, not the enemy: let deals close wherever they close, and make ArcScore the number brands use to decide which athletes to put on it.",
@@ -134,7 +134,7 @@ export default {
       kind: "Athlete marketability score",
       tags: ["Seed-stage", "Brands", "Schools"],
       oneLiner: sourced(
-        "An athlete marketability score built from public social data, sold to brands and athletic departments.",
+        "An athlete marketability score built from social metrics, NIL performance and brand spending data, for brands, agencies and universities.",
         ["out2win-seed"],
       ),
       now: { x: 42, y: 15 },
@@ -157,7 +157,7 @@ export default {
       kind: "Recruiting media and NIL valuations",
       tags: ["Media", "Public benchmark"],
       oneLiner: sourced(
-        "A recruiting media network whose NIL Valuation is the number the press and fans quote for what an athlete is worth.",
+        "A recruiting media network that publishes an NIL Valuation for college athletes.",
         ["on3-valuation-shift"],
       ),
       now: { x: 55, y: 60 },
@@ -166,11 +166,11 @@ export default {
       moves: [
         {
           date: "2026-07-01",
-          fact: sourced("Moved its NIL Valuation from an algorithm-based model to one based on reported player contracts.", "on3-valuation-shift"),
+          fact: sourced("Moved its NIL Valuation from an algorithm-based model to a deal-based model reflecting current player contract value.", "on3-valuation-shift"),
         },
       ],
       direction: read("Out of predicting value and into reporting confirmed contracts. That leaves the forward-looking appraisal without a well-known owner."),
-      threatRead: read("Medium. It shapes the reference number everyone argues with, but it is a media business, not a tool schools or brands buy."),
+      threatRead: read("Medium. Its valuation is the public number most often quoted, but it is a media business, not a tool schools or brands buy."),
       response: read("Position ArcScore as what an athlete could earn, against On3's record of what they did earn. Don't compete for headlines."),
     },
     {
@@ -179,7 +179,7 @@ export default {
       domain: "nilclub.com",
       kind: "Athlete app and performance marketing",
       tags: ["Athletes", "Brands", "Conversions"],
-      oneLiner: sourced("A free athlete app and a performance-marketing network for brands, priced on conversions.", "nilclub-newsroom"),
+      oneLiner: sourced("A performance-marketing platform for brands working with college athletes.", "nilclub-newsroom"),
       now: { x: 10, y: 10 },
       heading: { x: 8, y: 8 },
       threat: "medium",
@@ -205,11 +205,14 @@ export default {
       heading: { x: 55, y: 22 },
       threat: "medium",
       moves: [
-        { date: "2026-07-28", fact: sourced("Reported female athlete participation in its NIL programs up 123% year on year.", "learfield-women") },
-        { date: "2026-08-19", fact: sourced("Began a run of fall NIL media days at partner schools, starting at Tennessee.", "learfield-media-days") },
+        { date: "2026-07-28", fact: sourced("Reported female athlete participation in its NIL programs up 123% over its 2025-26 fiscal year.", "learfield-women") },
+        { date: "2026-07", fact: sourced("Began a run of NIL media days at partner schools, starting at Tennessee in late July.", "learfield-media-days") },
       ],
       direction: read("Turning its sponsor relationships into NIL programs at its partner schools."),
-      threatRead: read("Medium as a rival; higher as a gatekeeper. It already owns the local brand relationships ArcScore would want to reach."),
+      threatRead: read(
+        "Medium as a rival; higher as a gatekeeper. It already owns the local brand relationships ArcScore would want to reach, and schools building in-house NIL agencies have turned to it, as Ohio State did.",
+        { sources: ["schools-agencies"] },
+      ),
       response: read("Pitch Learfield as a channel: a score that helps its sponsors pick athletes is a product it can resell at every partner school."),
     },
   ],
@@ -223,12 +226,12 @@ export default {
       { sources: ["csc-jul-aug"] },
     ),
     read(
-      "Defensible pricing. The clearinghouse tests deals against a range of pay for comparable athletes, using reach, social presence and on-field performance. A score built on the same inputs can help a brand or a school price a deal that clears.",
+      "Defensible pricing. The clearinghouse tests school-tied deals against a range of pay for comparable athletes, using reach, social presence and on-field performance. A score built on the same inputs can help a school price a deal that clears.",
       { sources: ["roc-update", "csc-georgia"] },
     ),
     read(
-      "Volleyball and women's sports. Audiences and participation are growing faster than deal sizes, so the first platform to price these athletes well sets the market.",
-      { sources: ["espn-volleyball", "learfield-women", "opendorse-report-2026"] },
+      "Women's sports. Participation and audiences are growing and brands are signing female athletes in groups, while average deals stay small. The first platform to price these athletes well sets the market.",
+      { sources: ["espn-volleyball", "learfield-women", "brands-women", "opendorse-report-2026"] },
     ),
   ],
 } satisfies CompetitorsInput;

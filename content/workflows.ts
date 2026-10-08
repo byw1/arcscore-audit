@@ -19,13 +19,18 @@ export default [
     stages: [
       { id: "brief", name: "Brand brief", owner: "Growth lead", detail: read("Budget, audience, region, sport and timing. Most brands new to NIL arrive without a price in mind.") },
       { id: "shortlist", name: "Scored shortlist", owner: "Platform", detail: read("Athletes ranked on fit and value, each with a suggested price range.") },
-      { id: "outreach", name: "Athlete outreach", owner: "Platform and athlete", detail: read("Offer sent, terms agreed. Speed matters: brands moving on tournament moments want deals inside two days.") },
+      {
+        id: "outreach",
+        name: "Athlete outreach",
+        owner: "Platform and athlete",
+        detail: sourced("Offer sent, terms agreed. Brands moving on tournament moments keep rapid-response teams to activate within 24 to 48 hours.", "brands-march"),
+      },
       {
         id: "disclose",
         name: "Clearinghouse review",
         owner: "Athlete and school",
         detail: sourced(
-          "Deals worth $600 or more go to NIL Go, which checks for a valid business purpose and that pay falls within a range set by comparable athletes' deals.",
+          "Deals worth $600 or more are reported to NIL Go. Deals with entities tied to a school must show a valid business purpose and pay within a range set by comparable athletes; from July 2026, most under $15,000 skip the range check.",
           ["opendorse-report-2026", "roc-update"],
         ),
       },
@@ -33,37 +38,37 @@ export default [
       { id: "report", name: "Results report", owner: "Platform", detail: read("Reach, engagement and, where possible, sales. The report is what earns the second deal.") },
       { id: "renew", name: "Next campaign", owner: "Growth lead", detail: read("The brand books again, with more athletes or a bigger budget.") },
     ],
-    links: [{ from: "disclose", to: "outreach", label: "Not cleared: reprice" }],
+    links: [],
     leaks: [
       {
         id: "first-time-brands",
         at: "brief",
         severity: "high",
-        what: sourced("Most commercial NIL deals come from brands doing their first deal, so most buyers don't know what to pay or how it works.", "opendorse-report-2026"),
+        what: sourced("76.1% of commercial NIL deals came from first-time deal senders.", "opendorse-report-2026"),
       },
       {
         id: "priced-out",
-        at: "disclose",
-        severity: "medium",
-        what: sourced(
-          "Deals the clearinghouse turns down are much larger on average than deals it clears, and the comparison it prices against changes as its model is updated.",
-          ["csc-report", "csc-georgia"],
-        ),
+        at: "shortlist",
+        severity: "high",
+        what: read("A shortlist with no price leaves a first-time buyer guessing. Some overpay and don't come back; more stall and never send an offer."),
       },
       {
         id: "no-proof",
         at: "report",
         severity: "high",
-        what: sourced("Fewer than one in five adults recalled most major NIL deals, or said they bought from a brand because of an athlete partner.", "nil-recall"),
+        what: sourced(
+          "Fewer than one in five adults recalled most of ten recent Division I NIL deals tested, or said they bought or felt better about a brand because of an athlete partner.",
+          "nil-recall",
+        ),
       },
     ],
     kpis: [
       { name: "Brief to signed deal, in days", why: "Brands buy moments; slow matching loses the moment." },
-      { name: "Share of deals cleared on first review", why: "Proves the suggested price is defensible." },
+      { name: "Offers accepted at the suggested price", why: "Proves the price is one both sides believe." },
       { name: "Brands booking a second campaign", why: "The only proof the match worked." },
     ],
     firstMove: read(
-      "Put a suggested price range on every shortlisted athlete, built from the same inputs the clearinghouse uses, and send every brand a results report within two weeks of activation.",
+      "Put a suggested price range on every shortlisted athlete, and send every brand a results report within two weeks of activation.",
     ),
   },
   {
@@ -72,13 +77,13 @@ export default [
     jd: ["close", "credibility"],
     oneLiner: read(
       "Schools have budget and a new problem, the cap, but they also have incumbents installed and slow procurement. The sale is won in the pilot and lost in procurement.",
-      { sources: ["revshare-total", "teamworks-personnel"] },
+      { sources: ["revshare-split", "teamworks-personnel"] },
     ),
     stages: [
       { id: "target", name: "Pick the school", owner: "Growth lead", detail: read("A program with a volleyball or women's basketball story, and an NIL lead who has to report results.") },
       { id: "demo", name: "Demo on their own roster", owner: "Growth lead", detail: read("Score their actual athletes before the meeting. A generic demo is easy to ignore.") },
       { id: "pilot", name: "Pilot", owner: "School NIL lead", detail: read("One or two teams, a fixed term and a success measure agreed up front.") },
-      { id: "procure", name: "Procurement", owner: "School purchasing", detail: sourced("School software contracts are public records, so prices and terms become visible to rivals.", "schools-agencies") },
+      { id: "procure", name: "Procurement", owner: "School purchasing", detail: read("Public universities buy through purchasing rules, and their contracts can often be reached by records requests, so terms become visible to rivals.") },
       { id: "onboard", name: "Athlete onboarding", owner: "School and platform", detail: read("Athletes connect accounts and stats. Coverage decides whether the school sees value.") },
       { id: "renew", name: "Renewal", owner: "Growth lead", detail: read("Renewal rests on deals generated for athletes, not on logins.") },
     ],
@@ -95,7 +100,7 @@ export default [
         at: "demo",
         severity: "high",
         what: sourced(
-          "The incumbent already sells roster planning and athlete-earnings tools, and is buying the performance data a roster-value score would use.",
+          "Teamworks sells a general-manager tool for roster planning and total athlete earnings, and bought PFF's enterprise football data business in March 2026.",
           ["teamworks-personnel", "teamworks-pff"],
         ),
       },
@@ -144,17 +149,17 @@ export default [
         at: "score",
         severity: "medium",
         what: sourced(
-          "Few athletes in the focus sports have large followings: under one in twenty women's volleyball players and under one in eleven football players have ten thousand or more.",
+          "Few athletes have large followings: on Opendorse, 2.4% of women's volleyball players and 6.4% of football players have ten thousand or more.",
           "opendorse-report-2026",
         ),
       },
     ],
     kpis: [
-      { name: "Scored athletes per focus sport", why: "The inventory brands search." },
+      { name: "Scored athletes per sport", why: "The inventory brands search." },
       { name: "Athletes with a deal within ninety days", why: "The supply-side retention signal." },
     ],
     firstMove: read(
-      "Recruit whole teams, not single athletes: one volleyball and one women's basketball roster at a pilot school, so a brand searching that school sees a full roster on day one.",
+      "Recruit whole teams, not single athletes: two women's rosters at a pilot school, so a brand searching that school sees a full team on day one.",
     ),
   },
   {
@@ -187,7 +192,7 @@ export default [
         id: "benchmark-shift",
         at: "value",
         severity: "medium",
-        what: sourced("On3, the best-known public valuation, moved from an algorithm to reported contracts in July 2026.", "on3-valuation-shift"),
+        what: sourced("On3 moved its NIL Valuation from an algorithm-based model to a deal-based one reflecting current player contract value in July 2026.", "on3-valuation-shift"),
       },
     ],
     kpis: [
@@ -212,7 +217,7 @@ export default [
         name: "Story",
         owner: "Founder",
         detail: sourced(
-          "The why-now: the Senate-passed bill would write revenue sharing, the clearinghouse and the $600 reporting rule into federal law.",
+          "The why-now: the Senate-passed bill would lock the revenue-sharing model and the $600 reporting rule into federal law.",
           ["pcsa-analysis", "pcsa-senate"],
         ),
       },

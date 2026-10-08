@@ -9,7 +9,7 @@ import type { CompanyInput } from "@/lib/schema/public";
  */
 export default {
   oneLiner: sourced(
-    "A pre-launch platform that gives college athletes an NIL value score and connects them with the brands and schools that pay them.",
+    "A pre-launch platform that gives college athletes an NIL value score and connects them with brands, with monitoring and compliance tools for schools.",
     ["arc-site", "trademark"],
   ),
   model: sourced(
@@ -19,7 +19,7 @@ export default {
 
   stats: [
     stat("$4M", sourced("SAFE round offered, per the company's SEC notice of June 2026", "form-d")),
-    stat("$21.3M", sourced("Most a school can share directly with its athletes in 2026-27, the cap under the House settlement", "cap-2026")),
+    stat("$21.3M", sourced("Most a school can share directly with its athletes in 2026-27, the cap under the House settlement", ["cap-2026", "opendorse-report-2026"])),
     stat("$4.5B", sourced("Opendorse's estimate of total NIL spend in 2026-27", "opendorse-report-2026")),
     stat("$188.6M", sourced("Of the $227M+ in NIL deals cleared in July and August 2026, the part with entities tied to the schools", "csc-jul-aug")),
   ],
@@ -28,24 +28,24 @@ export default {
     headline: "Price the money that sits outside the cap.",
     points: [
       {
-        title: "Fair value became a compliance question",
+        title: "Fair value now has a regulator",
         fact: read(
-          "Since mid-2025, deals worth $600 or more are checked against what comparable athletes earn, on reach, social presence and on-field performance. Those are ArcScore's own inputs. A defensible appraisal now has a regulator's reason to exist, and the Senate has voted to put the system into federal law.",
-          { sources: ["roc-update", "csc-georgia", "pcsa-senate", "trademark"] },
+          "Deals with entities tied to a school are checked against a range built from comparable athletes' outside deals, on reach, social presence and on-field performance. ArcScore's trademark filing lists the same kinds of inputs. That gives a defensible appraisal a compliance use on the school side, and the Senate has voted to put revenue sharing and the $600 reporting rule into federal law.",
+          { sources: ["roc-update", "csc-georgia", "opendorse-report-2026", "pcsa-analysis", "trademark"] },
         ),
       },
       {
         title: "Start with brands, where the scarce money is",
         fact: read(
-          "Schools' own money is capped and mostly committed to football and men's basketball. Most cleared deal dollars come from entities tied to the schools, and most commercial deals come from brands doing their first one. Those brands need someone to tell them who to sign and what to pay. A founder who ran marketing at Target, Wingstop and Bath & Body Works has been that buyer.",
+          "Schools' own money is capped and mostly committed to football and men's basketball. Most cleared deal dollars come from entities tied to the schools, and most commercial deals come from brands doing their first one. Those brands need someone to tell them who to sign and what to pay. A founder who ran marketing at Target, Wingstop and Bath & Body Works has sat on the buyer's side of that decision.",
           { sources: ["house-settlement", "csc-jul-aug", "opendorse-report-2026", "revshare-split", "target-svp", "bbw-cco"] },
         ),
       },
       {
         title: "Enter schools as data, not as another system",
         fact: read(
-          "Teamworks and Dropback are building roster and cap tools on bought performance data, and Student Athlete Score already sells social scorecards to athletic departments. ArcScore wins schools by pricing what those tools don't: brand value, and the sports they underweight, like volleyball.",
-          { sources: ["teamworks-pff", "dropback-hudl", "sas-mason", "espn-volleyball"] },
+          "Teamworks and Dropback are building roster and cap tools on performance data, and Student Athlete Score already sells social data and valuation tools to athletic departments. ArcScore earns a place at schools by being the defensible price for school-tied deals and the source of outside brand money, delivered into the tools schools already run.",
+          { sources: ["teamworks-pff", "dropback-hudl", "sas-fairfield", "roc-update"] },
         ),
       },
     ],
@@ -60,9 +60,10 @@ export default {
       "The site speaks to three audiences. Athletes get their score and connect with brands. Schools monitor NIL activity and compliance. Brands find athletes who fit their values through data-driven matching.",
       "arc-site",
     ),
-    sourced("Sign-up is not open yet, a sign-in page exists for the app, and the help centre lists API documentation as coming soon.", [
+    sourced("Sign-up is not open yet, the site links to a log-in for the app, and the help centre lists API documentation as coming soon.", [
       "arc-get-started",
       "arc-help",
+      "arc-site",
     ]),
     read(
       "This is a company at the end of building and the start of selling. The next six months decide whether the score becomes a product people pay for or a feature someone else ships.",
@@ -85,7 +86,7 @@ export default {
       round: "SAFE",
       amount: stat("$4M", sourced("Offering size", "form-d")),
       fact: sourced(
-        "At filing, $360,083 had been sold to eight investors, with a $50,000 minimum investment and no sales commissions paid. The amount sold will have moved since.",
+        "At filing, $360,083 had been sold to eight investors, with a $50,000 minimum investment and no sales commissions paid.",
         "form-d",
       ),
     },
@@ -96,7 +97,7 @@ export default {
       name: "Maurice Cooper",
       title: "Founder, President & CEO",
       fact: sourced(
-        "Previously Chief Customer Officer at Bath & Body Works (from 2023), SVP of Marketing at Target (from 2020), and CMO, then Chief Growth & Experience Officer, at Wingstop (2018–2019). Earlier at Coca-Cola and IHG.",
+        "Previously Chief Customer Officer at Bath & Body Works (from 2023), SVP of Marketing at Target (from 2020), and CMO, then Chief Growth & Experience Officer, at Wingstop (from 2018). Earlier at Coca-Cola and IHG.",
         ["form-d", "bcp-bio", "bbw-cco", "target-svp", "wingstop-cmo", "wingstop-cgo"],
       ),
       linkedin: "https://www.linkedin.com/in/maurice-cooper-016661/",

@@ -15,7 +15,7 @@
 
 - Close the first paying schools and brands, and turn pilots into renewals.
 - Build the revenue model: who pays, for what, and at what price, across schools, brands and athletes.
-- Sign up athletes in football, basketball and volleyball, and keep their data current enough to score.
+- Sign up athletes in the sports brands are buying, and keep their data current enough to score.
 - Make the ArcScore credible to buyers: show what it predicts, and how it fits the College Sports Commission's rules.
 - Run the fundraising process with the founder: the story, the metrics, the data room and the investor pipeline.
 - Set the operating cadence: weekly pipeline review, one metric owner per number, and a monthly investor update.

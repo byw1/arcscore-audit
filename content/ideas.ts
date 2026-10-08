@@ -24,13 +24,13 @@ export default {
       id: "price-every-match",
       title: "A suggested price on every match",
       summary: read(
-        "Show a dollar range next to every athlete a brand sees, built from the same inputs the clearinghouse uses: reach, social presence and performance. It answers the first question a first-time buyer has, and it makes deals more likely to clear.",
+        "Show a dollar range next to every athlete a brand sees. It answers the first question a first-time buyer has. The same range, built on the inputs the clearinghouse compares, is what a school needs before submitting a deal with an entity tied to it.",
         { sources: ["roc-update", "opendorse-report-2026"] },
       ),
       impact: 5,
       effort: 3,
       traces: ["leak:brand-deal/priced-out", "record:valuation-saas", "competitor:out2win"],
-      measure: "Share of ArcScore-priced deals cleared on first review",
+      measure: "Offers accepted at the suggested price, and school-tied deals cleared on first review"
     },
     {
       id: "published-backtest",
@@ -48,7 +48,7 @@ export default {
       id: "results-report",
       title: "A results report after every deal",
       summary: read(
-        "Two weeks after activation, every brand gets reach, engagement and cost per result, set against the price it paid. It is the trademark's ROI promise in its simplest form, and it is what NIL Club sells brands instead of a score.",
+        "Two weeks after activation, every brand gets reach, engagement and cost per result, set against the price it paid. It is the trademark's ROI promise in its simplest form. NIL Club sells brands on results, not on a score.",
         { sources: ["trademark", "nilclub-newsroom"] },
       ),
       impact: 4,
@@ -57,16 +57,16 @@ export default {
       measure: "Brands booking a second campaign within ninety days",
     },
     {
-      id: "volleyball-wedge",
-      title: "Win volleyball and women's basketball first",
+      id: "womens-wedge",
+      title: "Start with women's sports, where brands sign groups",
       summary: read(
-        "Recruit whole volleyball and women's basketball rosters at a few pilot schools; volleyball rosters grew under the settlement. Audiences are growing faster than prices, the big school tools are built around football, and brands in beauty and food already sign these athletes.",
-        { sources: ["espn-volleyball", "learfield-women", "brands-women", "opendorse-report-2026", "roster-limits"] },
+        "Recruit whole women's basketball and volleyball rosters at a few pilot schools. Beauty and fashion brands are signing female athletes in groups, female participation in Learfield's programs more than doubled, and volleyball drew record TV audiences. Average deals are small, which makes them cheap for a first-time brand to test, and the big school tools are built around football. Volleyball can now carry up to eighteen roster spots, up from twelve scholarships, so a roster is a bigger package.",
+        { sources: ["brands-women", "learfield-women", "espn-volleyball", "opendorse-report-2026", "roster-limits"] },
       ),
       impact: 4,
       effort: 3,
       traces: ["leak:athlete-supply/small-audiences", "leak:athlete-supply/score-no-deal", "competitor:dropback"],
-      measure: "Scored athletes per focus team, and share with a deal within a season",
+      measure: "Scored athletes per pilot team, and share with a deal within a season",
     },
     {
       id: "standard-pilot",
@@ -120,13 +120,13 @@ export default {
     {
       window: "60",
       title: "Close the first customers",
-      goal: "Paying brand design partners and signed school pilots in the focus sports.",
+      goal: "Paying brand design partners and signed school pilots in women's sports.",
       actions: [
         "Sign the first brand design partners from the founder's network.",
         "Put a suggested price on every match in the product.",
-        "Recruit whole volleyball and women's basketball rosters at the pilot schools.",
+        "Recruit whole women's basketball and volleyball rosters at the pilot schools.",
       ],
-      ideas: ["brand-design-partners", "price-every-match", "volleyball-wedge"],
+      ideas: ["brand-design-partners", "price-every-match", "womens-wedge"],
     },
     {
       window: "90",
