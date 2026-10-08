@@ -12,6 +12,7 @@ export default {
   company: {
     name: "ArcScore",
     domain: "arcscore.ai",
+    fictional: false,
   },
   role: {
     title: "Founding Head of Growth",
