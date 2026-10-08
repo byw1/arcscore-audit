@@ -79,7 +79,6 @@ export default {
   ],
   gaps: [
     {
-      requirement: "experience",
       gap: "The posting asks for 8+ years in marketplace operations.",
       handle: "Don’t argue the number. Name the distance, then let the audit make the case.",
     },
@@ -92,12 +91,10 @@ export default {
     {
       q: "The Q2 letter dates the first-order goal to the end of 2027. What does the plan behind it look like today?",
       why: "Shows I read the letter, and finds out whether the role owns the plan or inherits it.",
-      source: "nw-q2-letter",
     },
     {
       q: "Who changes a retailer’s credit limit today, and how often?",
       why: "The answer tells me whether terms is an operations job here yet.",
-      source: "nw-q2-call",
     },
     {
       q: "How do the warehouse teams and this role split ownership of a damaged order?",
