@@ -147,23 +147,22 @@ the images are static files.
 
 ```bash
 npx wrangler login                 # once per machine (or set CLOUDFLARE_API_TOKEN)
-npm run deploy:cf -- --github      # → https://acme-audit.<your-subdomain>.workers.dev
+npm run deploy:cf                  # → https://acme-audit.<your-subdomain>.workers.dev
 ```
 
-`deploy:cf` refuses to ship stale sealed prep. Otherwise it:
-- builds and deploys the Worker (`npm run new` already named it `<company>-audit`);
-- sets `PREP_KEY` and `PREP_SECRET` from `.env.local` as the Worker's
-  secrets;
-- with `--github`, stores `PREP_SECRET` as a GitHub Actions secret, so CI
-  checks your real prep.
+No variables or secrets are needed. `wrangler.jsonc` tells Wrangler to build
+the site before every deploy, so a plain `npx wrangler deploy` works too, and
+so does connecting the repo in the Cloudflare dashboard with its default
+settings. Without `PREP_KEY` and `PREP_SECRET` on the Worker, the prep view is
+simply off and the deployed site is the public audit only.
 
 Also:
 - `npm run cf:preview` runs the same build locally in Cloudflare's runtime.
 - **Custom domain:** add it in the Worker's settings. Link previews follow the
   domain the site is served from, so there's nothing else to set.
 - **Deploy on every push:** connect the repo under Workers → your Worker →
-  Settings → Builds, with build command `npx opennextjs-cloudflare build` and
-  deploy command `npx opennextjs-cloudflare deploy`.
+  Settings → Builds. Leave the build command empty and the deploy command as
+  `npx wrangler deploy`.
 - **Plan:** the free plan allows 10 ms of CPU per request. If pages fail with
   error 1102, move to Workers Paid.
 

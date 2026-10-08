@@ -53,7 +53,7 @@ npm run dev           # http://localhost:3000 — seals prep first; ?prep=<PREP_
 npm run prep:seal     # encrypt content/prep.ts → content/prep.sealed.json (prep:watch re-seals on save)
 npm run check         # validate + typecheck + lint
 npm run verify:share  # build, crawl the share view, prove nothing from the prep leaks
-npm run deploy:cf     # build, deploy to Cloudflare Workers, set the secrets (--github: CI secret too)
+npm run deploy:cf     # build and deploy to Cloudflare Workers; no variables or secrets needed
 npm run author:save   # save your byline and author.md as the profile every new audit starts with
 npm run template:update  # pull the template's improvements into this audit
 ```
