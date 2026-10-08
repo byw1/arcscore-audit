@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   // Rename this per audit: it becomes <name>.<your-subdomain>.workers.dev.
-  "name": "company-audit",
+  "name": "arcscore-audit",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
@@ -11,7 +11,7 @@
   },
   "services": [
     // Self-reference, required by OpenNext; must match "name" above.
-    { "binding": "WORKER_SELF_REFERENCE", "service": "company-audit" }
+    { "binding": "WORKER_SELF_REFERENCE", "service": "arcscore-audit" }
   ],
   "observability": { "enabled": true }
   // Secrets, set once per Worker (never in this file):

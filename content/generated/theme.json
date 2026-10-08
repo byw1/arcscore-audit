@@ -1,14 +1,14 @@
 {
-  "source": "domain",
-  "base": "#0779b2",
+  "source": "override",
+  "base": "#2450ff",
   "light": {
-    "live": "#0079b3",
-    "liveInk": "#0470a5",
+    "live": "#2450ff",
+    "liveInk": "#2450ff",
     "liveContrast": "#ffffff"
   },
   "dark": {
-    "live": "#44a8e7",
-    "liveInk": "#44a8e7",
+    "live": "#709afe",
+    "liveInk": "#709afe",
     "liveContrast": "#0b0b0a"
   }
 }

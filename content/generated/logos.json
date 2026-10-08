@@ -1,53 +1,299 @@
 {
-  "generatedAt": "2026-10-02",
+  "generatedAt": "2026-10-08",
   "entries": {
-    "northwind.example": {
+    "arcscore.ai": {
       "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+      "reason": "no icon (404)"
     },
-    "larkspur.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "teamworks.com": {
+      "status": "icon",
+      "src": "/logos/teamworks.com.png",
+      "src180": "/logos/teamworks.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "harbor.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "dropback.com": {
+      "status": "icon",
+      "src": "/logos/dropback.com.png",
+      "src180": "/logos/dropback.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "mercato.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "studentathletescore.com": {
+      "status": "icon",
+      "src": "/logos/studentathletescore.com.png",
+      "src180": "/logos/studentathletescore.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "tradefold.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "opendorse.com": {
+      "status": "icon",
+      "src": "/logos/opendorse.com.png",
+      "src180": "/logos/opendorse.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "shelfwise.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "out2win.com": {
+      "status": "icon",
+      "src": "/logos/out2win.com.png",
+      "src180": "/logos/out2win.com@180.png",
+      "size": 16,
+      "fetchedAt": "2026-10-08"
     },
-    "careers.northwind.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "on3.com": {
+      "status": "icon",
+      "src": "/logos/on3.com.png",
+      "src180": "/logos/on3.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "investors.northwind.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "nilclub.com": {
+      "status": "icon",
+      "src": "/logos/nilclub.com.png",
+      "src180": "/logos/nilclub.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "longtail.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "learfield.com": {
+      "status": "icon",
+      "src": "/logos/learfield.com.png",
+      "src180": "/logos/learfield.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "fieldnote.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "sec.gov": {
+      "status": "icon",
+      "src": "/logos/sec.gov.png",
+      "src180": "/logos/sec.gov@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "commerceweekly.example": {
-      "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+    "tsdr.uspto.gov": {
+      "status": "icon",
+      "src": "/logos/tsdr.uspto.gov.png",
+      "src180": "/logos/tsdr.uspto.gov@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     },
-    "retailsystems.example": {
+    "rdap.identitydigital.services": {
       "status": "monogram",
-      "reason": "reserved TLD (fictional)"
+      "reason": "no icon (404)"
+    },
+    "bcp.org": {
+      "status": "icon",
+      "src": "/logos/bcp.org.png",
+      "src180": "/logos/bcp.org@180.png",
+      "size": 16,
+      "fetchedAt": "2026-10-08"
+    },
+    "outcomesummit.com": {
+      "status": "icon",
+      "src": "/logos/outcomesummit.com.png",
+      "src180": "/logos/outcomesummit.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "franchising.com": {
+      "status": "icon",
+      "src": "/logos/franchising.com.png",
+      "src180": "/logos/franchising.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "corporate.target.com": {
+      "status": "icon",
+      "src": "/logos/corporate.target.com.png",
+      "src180": "/logos/corporate.target.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "globenewswire.com": {
+      "status": "icon",
+      "src": "/logos/globenewswire.com.png",
+      "src180": "/logos/globenewswire.com@180.png",
+      "size": 32,
+      "fetchedAt": "2026-10-08"
+    },
+    "bricker.com": {
+      "status": "icon",
+      "src": "/logos/bricker.com.png",
+      "src180": "/logos/bricker.com@180.png",
+      "size": 180,
+      "fetchedAt": "2026-10-08"
+    },
+    "wrhi.com": {
+      "status": "monogram",
+      "reason": "no icon (404)"
+    },
+    "sports.yahoo.com": {
+      "status": "icon",
+      "src": "/logos/sports.yahoo.com.png",
+      "src180": "/logos/sports.yahoo.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "assets.tina.io": {
+      "status": "monogram",
+      "reason": "no icon (404)"
+    },
+    "mynorthwest.com": {
+      "status": "icon",
+      "src": "/logos/mynorthwest.com.png",
+      "src180": "/logos/mynorthwest.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "nilrevolution.com": {
+      "status": "icon",
+      "src": "/logos/nilrevolution.com.png",
+      "src180": "/logos/nilrevolution.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "cbssports.com": {
+      "status": "icon",
+      "src": "/logos/cbssports.com.png",
+      "src180": "/logos/cbssports.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "commerce.senate.gov": {
+      "status": "icon",
+      "src": "/logos/commerce.senate.gov.png",
+      "src180": "/logos/commerce.senate.gov@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "blogs.duanemorris.com": {
+      "status": "monogram",
+      "reason": "no icon (404)"
+    },
+    "biz.opendorse.com": {
+      "status": "monogram",
+      "reason": "no icon (404)"
+    },
+    "frontofficesports.com": {
+      "status": "icon",
+      "src": "/logos/frontofficesports.com.png",
+      "src180": "/logos/frontofficesports.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "espnpressroom.com": {
+      "status": "icon",
+      "src": "/logos/espnpressroom.com.png",
+      "src180": "/logos/espnpressroom.com@180.png",
+      "size": 64,
+      "fetchedAt": "2026-10-08"
+    },
+    "news4jax.com": {
+      "status": "icon",
+      "src": "/logos/news4jax.com.png",
+      "src180": "/logos/news4jax.com@180.png",
+      "size": 180,
+      "fetchedAt": "2026-10-08"
+    },
+    "modernretail.co": {
+      "status": "icon",
+      "src": "/logos/modernretail.co.png",
+      "src180": "/logos/modernretail.co@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "intel.morningconsult.com": {
+      "status": "monogram",
+      "reason": "no icon (404)"
+    },
+    "goracers.com": {
+      "status": "icon",
+      "src": "/logos/goracers.com.png",
+      "src180": "/logos/goracers.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "ycombinator.com": {
+      "status": "icon",
+      "src": "/logos/ycombinator.com.png",
+      "src180": "/logos/ycombinator.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "sportsinfosolutions.com": {
+      "status": "icon",
+      "src": "/logos/sportsinfosolutions.com.png",
+      "src180": "/logos/sportsinfosolutions.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "hudl.com": {
+      "status": "icon",
+      "src": "/logos/hudl.com.png",
+      "src180": "/logos/hudl.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "msuspartans.com": {
+      "status": "icon",
+      "src": "/logos/msuspartans.com.png",
+      "src180": "/logos/msuspartans.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "fairfieldstags.com": {
+      "status": "icon",
+      "src": "/logos/fairfieldstags.com.png",
+      "src180": "/logos/fairfieldstags.com@180.png",
+      "size": 180,
+      "fetchedAt": "2026-10-08"
+    },
+    "gomason.com": {
+      "status": "icon",
+      "src": "/logos/gomason.com.png",
+      "src180": "/logos/gomason.com@180.png",
+      "size": 180,
+      "fetchedAt": "2026-10-08"
+    },
+    "heartlandconf.org": {
+      "status": "icon",
+      "src": "/logos/heartlandconf.org.png",
+      "src180": "/logos/heartlandconf.org@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "netinfluencer.com": {
+      "status": "icon",
+      "src": "/logos/netinfluencer.com.png",
+      "src180": "/logos/netinfluencer.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "athletechnews.com": {
+      "status": "icon",
+      "src": "/logos/athletechnews.com.png",
+      "src180": "/logos/athletechnews.com@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
+    },
+    "cuse.com": {
+      "status": "icon",
+      "src": "/logos/cuse.com.png",
+      "src180": "/logos/cuse.com@180.png",
+      "size": 16,
+      "fetchedAt": "2026-10-08"
+    },
+    "si.com": {
+      "status": "icon",
+      "src": "/logos/si.com.png",
+      "src180": "/logos/si.com@180.png",
+      "size": 32,
+      "fetchedAt": "2026-10-08"
+    },
+    "lanacion.com.ar": {
+      "status": "icon",
+      "src": "/logos/lanacion.com.ar.png",
+      "src180": "/logos/lanacion.com.ar@180.png",
+      "size": 128,
+      "fetchedAt": "2026-10-08"
     }
   }
 }
