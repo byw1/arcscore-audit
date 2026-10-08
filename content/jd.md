@@ -1,39 +1,28 @@
-# Head of Marketplace Operations: Northwind Commerce
+# Founding Head of Growth: ArcScore (role brief)
 
-> FICTIONAL EXAMPLE. Northwind Commerce and this posting are invented to show
-> the format. `/new-audit` replaces this file with the real job description.
+> No public posting exists. ArcScore is pre-launch: its site says sign-up is
+> "not yet available". This brief was written by the author to define the
+> seat this audit reads the company through. It is not a company statement,
+> and nothing in it is quoted from ArcScore.
 
-- **Posting:** https://careers.northwind.example/jobs/head-of-marketplace-operations
-- **Seen on the careers index:** https://careers.northwind.example/jobs (listed under Operations)
-- **Checked:** 2026-09-14
+- **Posting:** none (role brief by the author)
+- **Careers index:** none published by ArcScore as of 2026-10-08
+- **Written:** 2026-10-08
 
 ---
 
-## About the role
+## What the seat owns
 
-Northwind connects more than 40,000 independent makers with the independent
-retailers who stock them. As Head of Marketplace Operations, you'll own
-everything between a maker being approved and a retailer paying for their
-order. You'll report to our COO.
+- Close the first paying schools and brands, and turn pilots into renewals.
+- Build the revenue model: who pays, for what, and at what price, across schools, brands and athletes.
+- Sign up athletes in football, basketball and volleyball, and keep their data current enough to score.
+- Make the ArcScore credible to buyers: show what it predicts, and how it fits the College Sports Commission's rules.
+- Run the fundraising process with the founder: the story, the metrics, the data room and the investor pipeline.
+- Set the operating cadence: weekly pipeline review, one metric owner per number, and a monthly investor update.
 
-## What you'll own
+## What it takes
 
-- Own seller onboarding end to end, from an approved application to a maker’s first wholesale order.
-- Set and enforce the standards for listing quality and catalog health across more than 40,000 makers.
-- Run order fulfilment performance, including on-time shipping, defect rates and the growth of Northwind Fulfilment.
-- Partner with Trust & Safety on returns, disputes and the enforcement of seller policy.
-- Manage the operating side of net-60 terms with Finance: credit limits, collections and write-offs.
-- Lead a team of about 40 operations managers and analysts, and our offshore support partner.
-- Build the operating cadence: weekly business reviews, clear KPI ownership and forecasting.
-
-## What you'll bring
-
-- 8+ years in marketplace or e-commerce operations, including 3+ years leading managers.
-- Comfortable building operating metrics from raw data and making decisions from them.
-- A track record of running cross-functional programs with Product, Finance and Trust & Safety.
-- Experience scaling operations through process, automation and outsourced partners.
-
-## The team
-
-You'll lead Seller Onboarding and Marketplace Quality, and work alongside
-Product, Finance & Credit, Trust & Safety and our outsourced support partner.
+- Has sold to more than one side of a marketplace, and knows a pilot is not a contract.
+- Comfortable with a pipeline, a model and a data room, and building each from scratch.
+- Credible with athletic departments, brand marketers and investors in the same week.
+- Works at founder speed with no team underneath, then hires the first one.

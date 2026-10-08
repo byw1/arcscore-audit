@@ -4,35 +4,31 @@ import type { ConfigInput } from "@/lib/schema/public";
  * One audit, one company, one role. Everything company-specific lives in
  * content/; components never change between audits.
  *
- * THIS IS THE TEMPLATE'S EXAMPLE: Northwind Commerce is fictional. Every
- * number, person, quote and source below is invented to show the format.
- * /new-audit replaces all of it.
+ * ArcScore is pre-launch and has no public job posting. The "role" here is
+ * the author's own role brief (content/jd.md, source "brief"): the growth
+ * seat a company at this stage needs filled. It is not a company statement.
  */
 export default {
   company: {
-    name: "Northwind Commerce",
-    domain: "northwind.example",
-    fictional: true,
-    ticker: "NWND",
+    name: "ArcScore",
+    domain: "arcscore.ai",
   },
   role: {
-    title: "Head of Marketplace Operations",
-    team: "Marketplace Operations",
-    location: "Portland, OR or remote (US)",
-    jdUrl: "https://careers.northwind.example/jobs/head-of-marketplace-operations",
-    jdSource: "nw-jd",
+    title: "Founding Head of Growth",
+    team: "Founding team",
+    location: "Remote (US)",
+    jdUrl: "https://arcscore.ai/",
+    jdSource: "brief",
   },
   author: {
-    // You: shown in the header ("An outside-in read of {Company}, by {name}") and footer.
-    name: "Alex Example",
-    email: "alex@example.com",
-    linkedin: "https://www.linkedin.com/in/example",
+    name: "William Lee",
+    email: "william@bywilliaml.com",
+    linkedin: "https://www.linkedin.com/in/bywilliaml",
   },
-  researched: "2026-09",
-  // accent: "#2f5bea", // optional: overrides the colour derived from the company's icon
+  researched: "2026-10",
   hero: {
-    variant: "shader",
-    orbits: ["Makers", "Retailers", "Fulfilment"],
+    variant: "flywheel",
+    orbits: ["Athletes", "Brands", "Schools"],
   },
   modules: {
     company: true,
