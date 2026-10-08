@@ -1,93 +1,91 @@
-import { quote, read, sourced } from "@/lib/claims";
+import { quote, read } from "@/lib/claims";
 import type { RoleInput } from "@/lib/schema/public";
 
 /**
- * The role: the JD broken into responsibilities (quoted from the posting, so
- * they're sourced), the requirements, and where the role sits in the org.
- * FICTIONAL EXAMPLE.
+ * The role. ArcScore has no public posting, so the lines below are quoted
+ * from the author's own role brief (content/jd.md, source "brief"): the seat
+ * a pre-launch, three-sided NIL platform needs filled. They describe the
+ * work, not anything ArcScore has said.
  */
 export default {
   summary: read(
-    "The operator who owns everything between a maker being approved and a retailer paying: onboarding, catalog quality, fulfilment, returns and the terms book, with Finance and Trust & Safety as partners.",
-    { sources: ["nw-jd"] },
+    "The first commercial owner at a pre-launch company: closes the first schools and brands, builds the revenue model, keeps athlete supply flowing, and runs the raise with the founder. At this stage those are one job, because investors will price the round on the first contracts.",
+    { sources: ["brief", "arc-get-started"] },
   ),
 
   responsibilities: [
     {
-      id: "onboarding",
-      area: "Seller onboarding",
-      jd: quote("Own seller onboarding end to end, from an approved application to a maker’s first wholesale order.", "nw-jd"),
+      id: "close",
+      area: "First customers",
+      jd: quote("Close the first paying schools and brands, and turn pilots into renewals.", "brief"),
     },
     {
-      id: "catalog",
-      area: "Catalog quality",
-      jd: quote("Set and enforce the standards for listing quality and catalog health across more than 40,000 makers.", "nw-jd"),
+      id: "revenue-model",
+      area: "Revenue model",
+      jd: quote("Build the revenue model: who pays, for what, and at what price, across schools, brands and athletes.", "brief"),
     },
     {
-      id: "fulfilment",
-      area: "Fulfilment",
-      jd: quote("Run order fulfilment performance, including on-time shipping, defect rates and the growth of Northwind Fulfilment.", "nw-jd"),
+      id: "supply",
+      area: "Athlete supply",
+      jd: quote("Sign up athletes in football, basketball and volleyball, and keep their data current enough to score.", "brief"),
     },
     {
-      id: "returns",
-      area: "Returns and disputes",
-      jd: quote("Partner with Trust & Safety on returns, disputes and the enforcement of seller policy.", "nw-jd"),
+      id: "credibility",
+      area: "Score credibility",
+      jd: quote(
+        "Make the ArcScore credible to buyers: show what it predicts, and how it fits the College Sports Commission's rules.",
+        "brief",
+      ),
     },
     {
-      id: "terms",
-      area: "Terms and collections",
-      jd: quote("Manage the operating side of net-60 terms with Finance: credit limits, collections and write-offs.", "nw-jd"),
-    },
-    {
-      id: "team",
-      area: "Team",
-      jd: quote("Lead a team of about 40 operations managers and analysts, and our offshore support partner.", "nw-jd"),
+      id: "fundraise",
+      area: "Fundraising",
+      jd: quote(
+        "Run the fundraising process with the founder: the story, the metrics, the data room and the investor pipeline.",
+        "brief",
+      ),
     },
     {
       id: "cadence",
       area: "Operating cadence",
-      jd: quote("Build the operating cadence: weekly business reviews, clear KPI ownership and forecasting.", "nw-jd"),
+      jd: quote(
+        "Set the operating cadence: weekly pipeline review, one metric owner per number, and a monthly investor update.",
+        "brief",
+      ),
     },
   ],
 
   requirements: [
-    { id: "experience", jd: quote("8+ years in marketplace or e-commerce operations, including 3+ years leading managers.", "nw-jd") },
-    { id: "data", jd: quote("Comfortable building operating metrics from raw data and making decisions from them.", "nw-jd") },
-    { id: "cross-functional", jd: quote("A track record of running cross-functional programs with Product, Finance and Trust & Safety.", "nw-jd") },
-    { id: "scale", jd: quote("Experience scaling operations through process, automation and outsourced partners.", "nw-jd") },
+    { id: "multi-sided", jd: quote("Has sold to more than one side of a marketplace, and knows a pilot is not a contract.", "brief") },
+    { id: "build-from-scratch", jd: quote("Comfortable with a pipeline, a model and a data room, and building each from scratch.", "brief") },
+    { id: "credible", jd: quote("Credible with athletic departments, brand marketers and investors in the same week.", "brief") },
+    { id: "founder-speed", jd: quote("Works at founder speed with no team underneath, then hires the first one.", "brief") },
   ],
 
   placement: {
-    above: [
-      { id: "ceo", label: "CEO", person: "Maya Okafor", note: sourced("Co-founder; the COO reports to her.", "nw-about") },
-    ],
     reportsTo: {
-      id: "coo",
-      label: "COO",
-      person: "Daniel Reyes",
-      note: sourced("The posting says the role reports to the COO.", "nw-jd"),
+      id: "founder",
+      label: "Founder",
+      person: "Maurice Cooper",
+      note: read("The founder, a consumer-brand marketing executive, appears to be leading the company directly. The seat would report to the founder directly."),
     },
     role: {
-      note: read("The single owner of the order lifecycle after a maker is approved. Today that ownership looks split across several teams."),
+      note: read("The single owner of revenue and the raise while the founder owns the vision, the brand relationships the founder brings, and the product."),
     },
     peers: [
-      { id: "fulfilment-network", label: "Fulfilment network", note: read("Runs the warehouses themselves; likely a peer under the COO, given the job posts for network planners.") },
-      { id: "support", label: "Customer support", note: sourced("Support also reports to the COO, per the leadership page.", "nw-about") },
+      { id: "product-data", label: "Product and data", note: read("Whoever builds the score and the app. The site and a sign-in page exist, so someone is building; who is not public.") },
     ],
     reports: [
-      { id: "onboarding-team", label: "Seller onboarding", note: sourced("Named in the posting's team description.", "nw-jd") },
-      { id: "marketplace-quality", label: "Marketplace quality", note: sourced("Named in the posting's team description.", "nw-jd") },
-      { id: "ops-analytics", label: "Ops analytics", note: read("Implied by the KPI and forecasting responsibilities.") },
-      { id: "offshore-partner", label: "Offshore support partner", note: sourced("The posting names an outsourced support partner.", "nw-jd") },
+      { id: "athlete-ambassadors", label: "Campus ambassadors", note: read("Not a team yet. The first hire I'd make is a part-time network of athlete ambassadors in the focus sports.") },
     ],
     upstream: [
-      { id: "seller-acquisition", label: "Seller acquisition", note: read("Sales brings approved makers in; the role picks them up at approval.") },
-      { id: "product", label: "Marketplace product", note: sourced("The posting names Product as a key partner.", "nw-jd") },
+      { id: "athletes", label: "Athletes", note: read("The supply side. Without enough scored athletes, there is nothing to sell to brands or schools.") },
+      { id: "data", label: "Social and performance data", note: read("The inputs to the score. Who supplies them, and on what terms, decides how defensible it is.") },
     ],
     downstream: [
-      { id: "finance", label: "Finance & credit", note: sourced("Owns the terms book with the role, per the posting.", "nw-jd") },
-      { id: "trust-safety", label: "Trust & Safety", note: sourced("Partners on returns, disputes and policy, per the posting.", "nw-jd") },
-      { id: "retailer-success", label: "Retailer success", note: read("Feels every late shipment and dispute decision first.") },
+      { id: "brands", label: "Brands and agencies", note: read("Pay to find and contract athletes. The money here sits outside the schools' revenue-share cap.") },
+      { id: "schools", label: "Athletic departments", note: read("Pay for roster-value and compliance insight, on longer procurement cycles.") },
+      { id: "investors", label: "Investors", note: read("Fund the build. They will price the next round on contracts and usage, not on the score alone.") },
     ],
   },
 } satisfies RoleInput;

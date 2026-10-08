@@ -26,6 +26,7 @@ export default {
     linkedin: "https://www.linkedin.com/in/bywilliaml",
   },
   researched: "2026-10",
+  accent: "#2450ff", // ArcScore's own button blue; the site has no favicon to derive one from
   hero: {
     variant: "flywheel",
     orbits: ["Athletes", "Brands", "Schools"],
