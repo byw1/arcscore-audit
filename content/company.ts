@@ -8,14 +8,8 @@ import type { CompanyInput } from "@/lib/schema/public";
  * around it is well documented.
  */
 export default {
-  oneLiner: sourced(
-    "A pre-launch platform that gives college athletes an NIL value score and connects them with brands, with monitoring and compliance tools for schools.",
-    ["arc-site", "trademark"],
-  ),
-  model: sourced(
-    "It plans to sell software and data: NIL valuation and pricing tools, revenue-sharing tools for athletic departments, and campaign planning and return-on-investment measurement for brands and agencies.",
-    "trademark",
-  ),
+  oneLiner: sourced("A pre-launch platform that scores college athletes' NIL value and connects them with brands.", ["arc-site", "trademark"]),
+  model: sourced("It plans to sell NIL valuation, pricing and ROI software to brands, agencies and athletic departments.", "trademark"),
 
   stats: [
     stat("$4M", sourced("SAFE round offered, per the company's SEC notice of June 2026", "form-d")),

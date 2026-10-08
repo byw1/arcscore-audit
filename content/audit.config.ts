@@ -29,7 +29,7 @@ export default {
   researched: "2026-10",
   accent: "#2450ff", // ArcScore's own button blue; the site has no favicon to derive one from
   hero: {
-    variant: "flywheel",
+    variant: "shader",
     orbits: ["Athletes", "Brands", "Schools"],
   },
   modules: {

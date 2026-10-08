@@ -75,12 +75,9 @@
       "size": 128,
       "fetchedAt": "2026-10-08"
     },
-    "rdap.org": {
-      "status": "icon",
-      "src": "/logos/rdap.org.png",
-      "src180": "/logos/rdap.org@180.png",
-      "size": 128,
-      "fetchedAt": "2026-10-08"
+    "rdap.identitydigital.services": {
+      "status": "monogram",
+      "reason": "no icon (404)"
     },
     "bcp.org": {
       "status": "icon",
@@ -179,13 +176,6 @@
       "status": "icon",
       "src": "/logos/frontofficesports.com.png",
       "src180": "/logos/frontofficesports.com@180.png",
-      "size": 128,
-      "fetchedAt": "2026-10-08"
-    },
-    "forbes.com": {
-      "status": "icon",
-      "src": "/logos/forbes.com.png",
-      "src180": "/logos/forbes.com@180.png",
       "size": 128,
       "fetchedAt": "2026-10-08"
     },
